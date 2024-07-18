@@ -1,5 +1,6 @@
 html {
     overflow-x: hidden;
+
 }
 
 /* Stile generale del body */
@@ -22,7 +23,6 @@ header {
 
 /* Stile principale del contenuto */
 main {
-    padding: 20px;
     background-color: #e9e2e281;
 }
 
@@ -30,13 +30,21 @@ main {
 .recipe-title {
     font-size: 1.5rem;
     position: relative;
-    left: -18px;
+    left: 240px;
+}
+
+
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .star {
     position: absolute;
     top: 195px;
-    left: 164px;
+    left: 940px;
 }
 
 .rate {
@@ -49,8 +57,18 @@ main {
 
 /* Stile del sottotitolo della ricetta */
 .recipe-tagline {
-    font-style: italic;
-    font-size: 0.9rem;
+    position: relative;
+    top: 0;
+    left: 231px;
+}
+
+
+.fa-clock,
+.fa-blender,
+.fa-chart-pie,
+.fa-euro-sign,
+.fa-thumbtack {
+    color: orange
 }
 
 
@@ -60,11 +78,14 @@ main {
     display: flex;
     margin: 20px 0;
     justify-content: center;
+    position: relative;
+    top: 0;
+    left: 247px;
 }
 
 .recipe-info {
     background-color: white;
-    padding: 32px;
+    padding: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
@@ -133,7 +154,7 @@ main {
 }
 
 .banner {
-    width: 66%;
+    width: 62%;
 }
 
 /* Stile della descrizione della ricetta */
@@ -143,13 +164,41 @@ main {
     align-items: center;
 }
 
-/* Stile dell'immagine nella descrizione */
+
 .description-image {
-    max-width: 108%;
+    max-width: 50%;
     margin: 0px 0;
 }
 
 .description {
     line-height: 2.5;
     width: 66%;
+}
+
+/* Stile del piè di pagina */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: violet;
+}
+
+
+.footer-info {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333;
 }

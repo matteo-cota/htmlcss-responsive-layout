@@ -1,40 +1,21 @@
-/* Stili per schermi 576px (Mobile) */
 @media screen and (min-width: 576px) {
 
-    /* Allinea il logo a sinistra nell'intestazione */
-    header {
-        text-align: left;
-    }
 
-    /* Aumenta il padding del contenuto principale */
     main {
-        padding: px;
-        width: 30%
+        padding: 30px;
     }
 
-    /* Aumenta la dimensione del titolo della ricetta */
+
     .recipe-title {
         font-size: 1.8rem;
     }
 
-    .video-container {
-        width: 10%;
 
-    }
-
-    /* Mostra il sottotitolo della ricetta */
     .recipe-tagline {
         display: block;
     }
 
-    .recipe-title: {
-        font-size: 1.5rem;
-        position: relative;
-        left: 14px;
-        top: 0;
-    }
 
-    /* Aumenta la dimensione e lo spazio tra i pulsanti social */
     .social-buttons {
         gap: 15px;
     }
@@ -43,4 +24,127 @@
         padding: 12px 24px;
         font-size: 1.1rem;
     }
+}
+
+
+/* Stili per schermi 768px (Tablet) */
+@media screen and (min-width: 768px) {
+
+
+
+    header {
+        text-align: left;
+    }
+
+
+    main {
+        padding: 40px;
+    }
+
+
+    .recipe-title {
+        font-size: 2rem;
+    }
+
+
+    .recipe-tagline {
+        display: block;
+    }
+
+
+    .recipe-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+
+    .social-buttons {
+        gap: 20px;
+    }
+
+    .social-button {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+
+
+    .ad-banner {
+        display: block;
+    }
+
+
+    .recipe-description {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .description-image {
+        margin-right: 20px;
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+
+
+}
+
+
+
+
+
+
+/* Stili per schermi di larghezza minima 992px (Desktop) */
+@media screen and (min-width: 992px) {
+
+
+    .recipe-title {
+        font-size: 2.5rem;
+    }
+
+
+    .recipe-info {
+        display: block;
+    }
+
+    .recipe-description {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+
+    .video-container {
+        width: 60%;
+        display: flex;
+        vertical-align: top;
+        flex-direction: row;
+    }
+
+    .recipe-info {
+        width: 35%;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 5%;
+    }
+
+
+    .social-buttons {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .social-button::before {
+        content: attr(data-platform);
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+    footer {
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+    }
+
 }
